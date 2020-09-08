@@ -1,0 +1,13 @@
+- hosts: localhost
+  gather_facts: False
+
+  tasks:
+
+    - name: Change instance(s) state in us-east-1
+      ec2:
+        state: "{{ state }}"
+        instance_ids: "{{ ids }}"
+        region: us-east-1
+        #alternative aws cli commands
+        #aws ec2 start-instances --instance-ids <value>
+        #aws ec2 terminate-instances --instance-ids <value>
