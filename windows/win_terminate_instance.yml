@@ -1,0 +1,12 @@
+- hosts: localhost
+  gather_facts: False
+
+  tasks:
+
+    - name: Terminate instance(s) in us-east-1
+      ec2:
+        state: 'absent'
+        instance_ids: "{{ ids }}"
+        region: us-east-1
+        #alternative aws cli command
+        #aws ec2 terminate-instances --instance-ids <value>
