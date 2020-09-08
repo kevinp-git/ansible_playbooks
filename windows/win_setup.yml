@@ -3,10 +3,10 @@
 
   tasks:
 
-    - name: Spin up Windows 2019 base t2.micro instance
+    - name: Spin up Windows 2019 base t2.micro instance in us-east-1
       ec2:
         key_name: "{{ key }}"
         instance_type: t2.micro
         image: ami-032c2c4b952586f02
-        region: "{{ region }}" 
+        region: us-east-1 
         wait: true
