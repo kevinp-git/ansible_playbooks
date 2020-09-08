@@ -7,6 +7,6 @@
       ec2:
         key_name: "{{ key }}"
         instance_type: t2.micro
-        image: ami-032c2c4b952586f02
+        image: ami-032c2c4b952586f02 #specific to region
         region: us-east-1 
         wait: true
