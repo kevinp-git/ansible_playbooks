@@ -1,6 +1,5 @@
 # ansible_playbooks
-To-do
+TO-DO
 
 Windows
-1. Configure security groups
-2. Enable IIS
+1. Enable IIS on AWS instance
