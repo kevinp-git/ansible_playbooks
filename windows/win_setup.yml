@@ -1,12 +1,12 @@
 - hosts: localhost
-  gather_facts: False
+  gather_facts: false
 
   tasks:
 
     - name: Spin up Windows 2019 base t2.micro instance in us-east-1
       ec2:
-        key_name: "{{ key }}"
-        group: "{{ group }}" #list security group(s)
+        key_name: '{{ key }}'
+        group: '{{ group }}' #add security group(s)
         instance_type: t2.micro
         image: ami-032c2c4b952586f02 #specific to region
         region: us-east-1 
